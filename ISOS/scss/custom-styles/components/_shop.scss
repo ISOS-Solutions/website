@@ -1,0 +1,150 @@
+// Shop 
+//---------------------------------------------
+.carousel-product {
+  * + & {
+    margin-top: 15px;
+  }
+}
+// product
+
+// product grid
+.product-grid {
+  text-align: center;
+  * + .button {
+    margin-top: auto;
+  }
+}
+.product-caption {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  .product-author{
+    color: $black;
+  }
+  .product-date{
+   display: flex;
+    align-items: center;
+    font-size: 16px;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  .product-price{
+    margin-bottom: 15px;
+  }
+}
+.product-img-wrap {
+  position: relative;
+  max-width: 400px;
+  display: inline-block;
+}
+.product-title {
+  a {
+    color: $black;
+    &:hover {
+      color: $primary;
+    }
+  }
+  * + & {
+    margin-top: 5px;
+  }
+}
+
+.product-price {
+  font-size: 24px;
+  color: $primary;
+  &.sale-price {
+   color: $secondary-2;
+  }
+  .old{
+    text-decoration: line-through;
+    margin-right: 15px;
+    color: $gray;
+  }
+}
+// product list
+
+.product-single {
+  .product-price {
+    font-size: 30px;
+  }
+  .product-title{
+    margin-bottom: 10px;
+    margin-top: -13px;
+  }
+  .product-author{
+    margin-bottom: 10px;
+  }
+  @media (min-width: 768px) and (max-width: 1199px) {
+    .product-img-wrap {
+      max-width: 40%;
+    }
+  }
+}
+
+// Product single
+.product-single {
+  .product-price {
+    font-size: 40px;
+    font-weight: 100;
+    .old{
+      font-size: 36px;
+    }
+  }
+
+  .product-text {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+// carousel product
+
+.carousel-product {
+  .owl-stage-outer {
+    padding-top: 35px;
+  }
+  &.owl-carousel[data-nav='true'] {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .owl-prev,
+  .owl-next {
+    top: 0;
+    transform: translateY(-150%);
+
+    @include media-breakpoint-up(xl) {
+      top: -30px;
+    }
+  }
+  .owl-prev {
+    left: auto;
+    right: 20px;
+    @include media-breakpoint-up(xl) {
+      right: 30px;
+    }
+  }
+}
+
+//single__course page
+.card-custom-description{
+  padding-left: 35px;
+  .description-text{
+    font-size: 18px;
+    color: $gray;
+  }
+}
+.week__plan{
+  padding-left: 35px;
+  .preview__course{
+    margin-bottom: 15px;
+  }
+}
+.product{
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+
